@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none; /* Removes the bullets */
+}
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.left-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 35%;
+}
+.bg-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.odin-logo {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.odin-image {
+    height: 13vh;
+    margin: 0;
+}
+.odin-text {
+    font-size: 13vh;
+}
+form {
+    position: absolute;
+    width: 65%;
+    height: 40vh;
+    top: 29%;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    --small-size: 3vh;
+    --med-size: 5vh;
+    --large-size: 10vh;
+}
+
+.form-inputs {
+    display: flex;
+}
