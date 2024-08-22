@@ -1,3 +1,31 @@
+/*Reset the default css */
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+
+/*my css code*/
+
 * {
     box-sizing: border-box;
 }
@@ -46,16 +74,49 @@ body {
 form {
     position: absolute;
     width: 65%;
-    height: 40vh;
+    height: auto;
     top: 29%;
     right: 0;
     padding: 10px;
     background-color: white;
-    --small-size: 3vh;
-    --med-size: 5vh;
+    overflow: hidden;
+    --small-size: 2vh;
+    --med-size: 4vh;
     --large-size: 10vh;
 }
 
 .form-inputs {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+
+}
+form > legend {
+    font-size: 4vh;
+}
+.form-inputs > ul > li {
+    padding: 5px;
+    font-size: var(--small-size);
+}
+
+    
+input {
+    display: block;
+    font-size: var(--small-size);
+}
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    margin-left: 45px;
+    padding: 5px 7px; 
+    border: none; 
+    width: 20vh;
+    height: auto;
+    border-radius: 5px; 
+    font-size: var(--small-size); 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
 }
