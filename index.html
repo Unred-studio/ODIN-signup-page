@@ -26,7 +26,7 @@
             <ul class="form-col">
               <li>
                 <label>FIRST NAME</label>
-                <input type="text" />
+                <input min="2" type="text" />
                 </li>
                 <li>
                 <label>EMAIL</label>
@@ -34,21 +34,21 @@
                 </li>
                 <li>
                     <label>PASSWORD</label>
-                    <input type="password" />
+                    <input pattern="[A-Za-z\d]{8,}" class="password" type="password" />
                 </li>
             </ul>
             <ul class="form-col">
               <li>
                 <label>LAST NAME</label>
-                <input type="text" />
+                <input  min="2" type="text" />
             </li>
               <li>
                 <label>PHONE NUMBER</label>
-                <input type="number" />
+                <input pattern="[0-9]{10}" type="number" />
             </li>
               <li>
                 <label>CONFIRM PASSWORD</label>
-                <input type="password" />
+                <input pattern="[A-Za-z\d]{8,}" class="password" type="password" />
             </li>
             </ul>
           </div>

@@ -120,3 +120,12 @@ button {
 button:hover {
     background-color: #45a049;
 }
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
